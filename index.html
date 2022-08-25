@@ -5,9 +5,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+
 <style>
 
 </style>
+
 </head>
 <header>
     <div class="container navigation">
@@ -83,29 +85,26 @@
             </div>
 
             <section class="parrallax-item section section-light">
-                <div class="form">
+                <div class="form" id="formulario">
                     <div class="field">
-                        <label for="user">Username</label><span class="user">*</span>
+                        <label for="user">Nombre</label><span class="user">*</span>
                         <input type="text" name="user" id="user" placeholder="Type Your Name In English Only" class="main-input">
                     </div>
-                    <div class="field">
-                        <label for="password">Password</label><span class="pass">*</span>
-                        <input type="password" name="pass" id="pass" placeholder="Type A Complex Password" class="main-input">
-                    </div>
+                    
                     <div class="field">
                         <label for="email">Email</label><span class="mail">*</span>
                         <input type="email" name="mail" id="mail" placeholder="Type A Vaild Email" class="main-input">
                     </div>
                     <div class="field">
-                        <label for="phone">Phone</label>
+                        <label for="phone">Telefono</label>
                         <input type="text" name="phone" id="phone" class="main-input">
                     </div>
                     <div class="field brief">
-                        <label for="brief">Brief</label>
+                        <label for="brief">Mensaje</label>
                         <textarea name="brief" id="brief" class="main-input"></textarea>
                     </div>
-                    <div class="btn">
-                        <button>Register</button>
+                    <div class="btn" id="enviar">
+                        <button>Enviar</button>
                     </div>
                 </div>
             </section>
@@ -113,6 +112,6 @@
 
     
         </main>
-    
+        <script src="api.js"></script>
 </body>
 </html>
