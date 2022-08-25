@@ -10,8 +10,10 @@ let boton = document.getElementById('enviar');
 boton.addEventListener('click', onClick);
 
 function cleanForm(){
-    let formulario = document.getElementById('formulario');
-    formulario.reset();
+  document.getElementById('user').value = "",
+   document.getElementById('mail').value = "",
+    document.getElementById('phone').value = "",
+    document.getElementById('brief').value = ""
 }
 
 function onClick(event) {
