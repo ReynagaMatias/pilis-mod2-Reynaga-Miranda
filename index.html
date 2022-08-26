@@ -13,8 +13,7 @@
 </head>
 <header>
     <div class="container navigation">
-      <a class="logo" href="#">LOGO</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <!-- <a class="logo" href="#">LOGO</a> -->
       <label for="menu-btn" class="menu-icon">
         <span class="nav-icon"></span>
         <span class="nav-icon"></span>
@@ -22,11 +21,10 @@
       </label>
       <nav>
         <ul>
-          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="/">Home</a></li>
           <li class="nav-item"><a href="#feria">Feria</a></li>
           <li class="nav-item"><a href="#nosotros">Nosotros</a></li>
-          <li class="nav-item"><a href="#">Registrate</a></li>
-         
+          <li class="nav-item"><a href="#formulario">Registrate</a></li>
         </ul>
       </nav>
 
@@ -45,9 +43,8 @@
             </div>
     
             <section class="parrallax-item section section-light">
-                <h1 >Jujuy en Flor  </h1>     <br><br><br>          
-                
-                <h6> Juntos potenciamos el comercio jujeño</h6>
+                <h1 >Jujuy en Flor  </h1>   
+                <h3> Juntos potenciamos el comercio jujeño</h3>
             </section>
     
             <div  id="nosotros" class="parrallax-item pimg2">
@@ -57,17 +54,24 @@
             </div>
     
             <section class="parrallax-item section section-dark">
-                <h2>Quienes somos?</h2>
-                <p>Somos más de cincuenta productores de toda la provincia y ofrecemos a nuestros visitantes los mejores ejemplares de Jujuy tanto de flores de corte como de árboles frutales, cactus, crasas, plantas aromáticas, flores de estación, entre otras tantas variedades.
-                </p>
+                <div >
+
+                    <h2>Quienes somos?</h2>
+
+                </div>
+                <div>
+
+                    <p>Somos más de cincuenta productores de toda la provincia y ofrecemos a nuestros visitantes los mejores ejemplares de Jujuy tanto de flores de corte como de árboles frutales, cactus, crasas, plantas aromáticas, flores de estación, entre otras tantas variedades.
+                </div>
             </section>
     
-            <div>
-                <div >
-                    
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ohDPPDasWlQ?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div  id="nosotros" class="parrallax-item pvid" >
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/ohDPPDasWlQ?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
+    
+
+
     
             <section class="parrallax-item section section-light">
                 <h2>Festival Jujuy en Flor</h2>
@@ -103,20 +107,20 @@
                 <div class="form" id="formulario">
                     <div class="field">
                         <label for="user">Nombre</label><span class="user">*</span>
-                        <input type="text" name="user" id="user" placeholder="Type Your Name In English Only" class="main-input">
+                        <input type="text" name="user" id="user" placeholder="Ingrese su Nombre" class="main-input">
                     </div>
                     
                     <div class="field">
                         <label for="email">Email</label><span class="mail">*</span>
-                        <input type="email" name="mail" id="mail" placeholder="Type A Vaild Email" class="main-input">
+                        <input type="email" name="mail" id="mail" placeholder="Ingrese su Email" class="main-input" required>
                     </div>
                     <div class="field">
                         <label for="phone">Telefono</label>
-                        <input type="text" name="phone" id="phone" class="main-input">
+                        <input type="text" name="phone" id="phone" placeholder="Ingrese sn telefono" class="main-input">
                     </div>
                     <div class="field brief">
                         <label for="brief">Mensaje</label>
-                        <textarea name="brief" id="brief" class="main-input"></textarea>
+                        <textarea name="brief" id="brief" placeholder="Escriba su Mensaje" class="main-input"></textarea>
                     </div>
                     <div class="btn" id="enviar">
                         <button>Enviar</button>

@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+ul li::marker {
+    color: #6EE178;
+}
+
 .container {
     width: 90%;
     max-width: 1134px;
@@ -14,7 +18,7 @@
 }
 
 header {
-    background-color: #05042b;
+    background-color: #6EE178;
     width: 100%;
     position: sticky;
     top: 0;
@@ -31,7 +35,7 @@ header nav ul li a {
 }
 
 header nav ul {
-    background-color: #05042b;
+    background-color: #6EE178;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -81,14 +85,6 @@ header nav ul {
 
 header nav ul .nav-item {
     flex: 1 1 100%;
-}
-
-header .menu-btn {
-    display: none;
-}
-
-header .menu-btn:checked~nav ul {
-    max-height: 330px;
 }
 
 @media (min-width: 980px) {
@@ -170,6 +166,13 @@ main {
     min-height: 100vh;
 }
 
+.pvid{
+    background-image: url("https://somosjujuy-wordpress.s3.amazonaws.com/wp-content/uploads/2021/04/12213210/floricultura.jpg");
+    min-height: 100vh;
+
+}
+
+
 .section {
     text-align: left;
     padding: 3rem 5rem;
@@ -221,6 +224,9 @@ main {
     color: #fff;
     padding: 0.30rem;
 }
+h2{
+    padding: 2rem 2rem;
+}
 
 
 @media (max-width: 728px) {
@@ -233,6 +239,7 @@ main {
 
     h2 {
         background: none;
+
     }
 
 }
@@ -250,8 +257,8 @@ body {
 
 .form {
     background-color: #f6f6f6;
-    width: 600px;
-    height: 300px;
+    width: 900px;
+    height: 500px;
     padding: 40px;
     margin: 40px auto;
     display: flex;
@@ -270,7 +277,7 @@ body {
 .field label {
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .field span.user {
@@ -308,7 +315,7 @@ body {
 
 .field .main-input::placeholder {
     color: #999;
-    font-size: 8px;
+    font-size: 13px;
 }
 
 .field textarea.main-input {
@@ -327,12 +334,13 @@ body {
 
 .form .btn button {
     width: 100%;
-    height: 36px;
+    height: 50px;
     background-color: #009688;
     color: white;
     padding: 0.6rem;
     border: none;
     border-radius: 4px;
+    font-size: 20px;
 }
 
 .principal{
@@ -369,4 +377,12 @@ body {
 #caja3 {
     background-color: rgba(0,0,0,0.767);
     color:azure;    
+}
+
+#video, iframe {
+    margin-top: 20px;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #777;
 }
