@@ -30,7 +30,11 @@ fetch('https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly?lat=-24.188
 
 function cleanForm() {
   let formulario = document.getElementById('formulario');
-  formulario.reset();
+  document.getElementById('user').value = "",
+  document.getElementById('mail').value = "",
+  document.getElementById('phone').value = "",
+  document.getElementById('brief').value = ""
+
 }
 
 

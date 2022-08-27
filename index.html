@@ -12,8 +12,7 @@
 
 </head>
 <header>
-    <div class="container navigation">
-      <!-- <a class="logo" href="#">LOGO</a> -->
+    <div class="container navigation navbar">
       <label for="menu-btn" class="menu-icon">
         <span class="nav-icon"></span>
         <span class="nav-icon"></span>
@@ -24,27 +23,35 @@
           <li class="nav-item"><a href="/">Home</a></li>
           <li class="nav-item"><a href="#feria">Feria</a></li>
           <li class="nav-item"><a href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a href="#clima">Clima</a></li>
+
           <li class="nav-item"><a href="#formulario">Registrate</a></li>
         </ul>
       </nav>
-
-
+      <a id="logo" class="navbar-logo" href="#">
+        <img src="img/logo.png" >
+      </a>
     </div>
   </header>
-  
+
 <body>
-    
         <main>
             <div class="parrallax-item pimg1" id="feria">
                 <div class="ptext">
                     <span class="border">Feria de las Plantas</span>
-                  
                 </div>
             </div>
     
             <section class="parrallax-item section section-light">
-                <h1 >Jujuy en Flor  </h1>   
-                <h3> Juntos potenciamos el comercio jujeño</h3>
+                <div>
+
+                    <h1 >Jujuy en Flor: </h1>   
+
+                </div>
+                <div>
+
+                    <h2> Juntos potenciamos el comercio jujeño</h2>
+                </div>
             </section>
     
             <div  id="nosotros" class="parrallax-item pimg2">
@@ -55,12 +62,9 @@
     
             <section class="parrallax-item section section-dark">
                 <div >
-
                     <h2>Quienes somos?</h2>
-
                 </div>
                 <div>
-
                     <p>Somos más de cincuenta productores de toda la provincia y ofrecemos a nuestros visitantes los mejores ejemplares de Jujuy tanto de flores de corte como de árboles frutales, cactus, crasas, plantas aromáticas, flores de estación, entre otras tantas variedades.
                 </div>
             </section>
@@ -79,9 +83,9 @@
                 </p>
             </section>
 
-            <div class="parrallax-item pimg3">
+            <div id="clima" class="parrallax-item pimg3">
                 <div class="ptexttiempo">
-                    <span class="border">Datos del Tiempo</span> <br><br><br>
+                    <span class="border">Datos del Clima</span> <br><br><br>
                     <div class="principal">
                         <div id="contenedor">
                             <div id="caja1">
@@ -103,20 +107,20 @@
             
             </div>
 
-            <section class="parrallax-item section section-light">
+            <section class="parrallax-item section section-dark">
                 <div class="form" id="formulario">
                     <div class="field">
                         <label for="user">Nombre</label><span class="user">*</span>
-                        <input type="text" name="user" id="user" placeholder="Ingrese su Nombre" class="main-input">
+                        <input type="text" name="user" id="user" placeholder="Ingrese su Nombre" required class="main-input">
                     </div>
                     
                     <div class="field">
                         <label for="email">Email</label><span class="mail">*</span>
-                        <input type="email" name="mail" id="mail" placeholder="Ingrese su Email" class="main-input" required>
+                        <input type="email" name="mail" id="mail" placeholder="Ingrese su Email" required class="main-input" >
                     </div>
                     <div class="field">
                         <label for="phone">Telefono</label>
-                        <input type="text" name="phone" id="phone" placeholder="Ingrese sn telefono" class="main-input">
+                        <input type="text" name="phone" id="phone" placeholder="Ingrese su telefono" class="main-input">
                     </div>
                     <div class="field brief">
                         <label for="brief">Mensaje</label>
@@ -127,10 +131,18 @@
                     </div>
                 </div>
             </section>
-
-
-    
         </main>
         <script src="api.js"></script>
 </body>
+
+<footer>
+    <div class="footer">
+        <p id="pfooter">
+          &copy; PILIS - 2022 - <a>Carlos Sebastian Miranda - Matias Alejandro Reynaga</a>
+          <br>
+          <a href="https://api.whatsapp.com/send?phone=+54 9 3885 84-0108&text=Hola, Nececito mas informacion!">Envíanos un mensaje de WhatsApp</a>
+        </p>
+      </div>
+</footer>
+
 </html>

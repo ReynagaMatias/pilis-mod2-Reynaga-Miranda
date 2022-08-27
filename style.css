@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
 /* HEADER */
 *,
 *::before,
@@ -6,7 +11,7 @@
 }
 
 ul li::marker {
-    color: #6EE178;
+    color: #9EF01A;
 }
 
 .container {
@@ -15,10 +20,11 @@ ul li::marker {
     margin: 0 auto;
     padding: 1em 0;
     position: relative;
+    font-family: 'Manrope   ', sans-serif;
 }
 
 header {
-    background-color: #6EE178;
+    background-color: #9EF01A;
     width: 100%;
     position: sticky;
     top: 0;
@@ -26,7 +32,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: white;
+    color: #004B23;
 }
 
 header nav ul li a {
@@ -35,7 +41,7 @@ header nav ul li a {
 }
 
 header nav ul {
-    background-color: #6EE178;
+    background-color: #9EF01A;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -60,7 +66,7 @@ header .menu-icon .nav-icon {
 
     display: block;
     margin: 2px 0;
-    background-color: white;
+    background-color: #004B23;
     width: 18px;
     position: relative;
     height: 2px;
@@ -85,6 +91,13 @@ header nav ul {
 
 header nav ul .nav-item {
     flex: 1 1 100%;
+}
+
+img {
+    width: 80px;
+    height: 80px; 
+    background-color: #9EF01A; 
+    
 }
 
 @media (min-width: 980px) {
@@ -121,6 +134,10 @@ header nav ul .nav-item {
 
 /* BODY */
 
+h3 p{ 
+    font-family: 'Aboreto', cursive;
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -151,23 +168,23 @@ main {
 }
 
 .pimg1 {
-    background-image: url("https://img.freepik.com/foto-gratis/primer-plano-manos-masculinas-sosteniendo-suelo-pequena-planta_23-2148814127.jpg?w=740&t=st=1661375752~exp=1661376352~hmac=b75e1a697b3e5399ad48c55aa5177c798852e151e7b89c623be634d84655fb51");
+    background-image: url("img/img1.png");
     min-height: 100vh;
     
 }
 
 .pimg2 {
-    background-image: url("https://us.cdn.eltribuno.com/112019/1573263049176/j1211.JPG?&cw=960&ch=636");
+    background-image: url("img/img2.jpg");
     min-height: 100vh;
 }
 
 .pimg3 {
-    background-image: url("https://eljujeño.com.ar/wp-content/uploads/2017/09/tecnopolis-e1504557537105-800x445.jpg");
+    background-image: url("img/img3.jpg");
     min-height: 100vh;
 }
 
 .pvid{
-    background-image: url("https://somosjujuy-wordpress.s3.amazonaws.com/wp-content/uploads/2021/04/12213210/floricultura.jpg");
+    background-image: url("img/imgvid.jpg");
     min-height: 100vh;
 
 }
@@ -180,12 +197,12 @@ main {
 }
 
 .section-dark {
-    background-color: #282e34;
+    background-color: #006400;
     color: #ddd;
 }
 
 .section-light {
-    background-color: #f4f4f4;
+    background-color: #70E000;
     color: #666;
 }
 
@@ -195,22 +212,24 @@ main {
     top: 50%;
     width: 100%;
      text-align:center ;
-    
     color: #000;
     font-size: 2rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+
 }
+
 .ptexttiempo {
     position: absolute;
     top: 20%;
     width: 100%;
     text-align:center ;
-     
     color: #000;
     font-size: 2rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 
 .ptexttiempo .border {
@@ -256,7 +275,7 @@ body {
 }
 
 .form {
-    background-color: #f6f6f6;
+    background-color: #006400;  
     width: 900px;
     height: 500px;
     padding: 40px;
@@ -285,25 +304,18 @@ body {
     color: tomato;
     left: 70px;
     top: 0;
-}
-
-.field span.pass {
-    position: absolute;
-    color: tomato;
-    left: 65px;
-    top: 0;
-}
+}   
 
 .field span.mail {
     position: absolute;
     color: tomato;
-    left: 40px;
+    left: 50px;
     top: 0;
 }
 
 .field .main-input {
     width: 100%;
-    box-shadow: 0 1px 0 0 #e1e1e1;
+    box-shadow: 0 1px 0 0 #115C18;
     border: none;
     padding: 10px;
     border-radius: 4px;
@@ -314,7 +326,7 @@ body {
 }
 
 .field .main-input::placeholder {
-    color: #999;
+    color: #2C5C30;
     font-size: 13px;
 }
 
@@ -323,7 +335,7 @@ body {
 }
 
 .field.brief {
-    flex-grow: 2;
+    flex-grow: 20;
 }
 
 .form .btn {
@@ -335,8 +347,8 @@ body {
 .form .btn button {
     width: 100%;
     height: 50px;
-    background-color: #009688;
-    color: white;
+    background-color: #70E000;
+    color: #004B23;
     padding: 0.6rem;
     border: none;
     border-radius: 4px;
@@ -386,3 +398,21 @@ body {
     margin: 0 auto;
     background-color: #777;
 }
+
+
+/* footer */
+
+
+footer {
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color:#9EF01A;
+    padding: 50px;
+    width: 100%;
+    height: 10%;
+}
+
+#pfooter{
+    text-align: center;
+}
+
