@@ -11,7 +11,7 @@ boton.addEventListener('click', onClick);
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': '975af6935emshb4bb60b0dbff540p1d4076jsn7f432dcecfdc',
+    'X-RapidAPI-Key': '71b28a92b8mshd6468d7b3b5dde0p146a35jsn62fd8093b04e',
     'X-RapidAPI-Host': 'weatherbit-v1-mashape.p.rapidapi.com'
   }
 };
